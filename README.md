@@ -124,36 +124,8 @@ fprintf(stderr, "shmdt failed\n"); exit(EXIT_FAILURE);
 }
 ```
 ## OUTPUT
-```
-$ ./shm.o 
-Shared memort id = 720902 
-Memory Attached at 1dcd5000
-Enter Some Text: Hello
-waiting for client.	
-Enter Some Text: World
-waiting for client.	
-waiting for client.	
-waiting for client.	
-Enter Some Text: end
+![image](https://github.com/ramanpiritha/Linux-IPC-Shared-memory/assets/147084116/c77e42a4-1ca1-45dc-8bad-b7c9fecbefae)
 
-$ ipcs
-
------- Message Queues --------
-key        msqid      owner      perms      used-bytes   messages    
-
------- Shared Memory Segments --------
-key        shmid      owner      perms      bytes      nattch     status      
-0x00000000 327680     gganesh    600        524288     2          dest         
-0x00000000 229377     gganesh    600        16777216   2          dest         
-0x00000000 360450     gganesh    600        524288     2          dest         
-0x00000000 458755     gganesh    600        524288     2          dest         
-0x00000000 491524     gganesh    600        524288     2          dest         
-0x00000000 589829     gganesh    600        524288     2          dest         
-0x000004d2 720902     gganesh    666        2052       2                       
-
------- Semaphore Arrays --------
-key        semid      owner      perms      nsems 
-```
 
 # RESULT:
 The program is executed successfully.
